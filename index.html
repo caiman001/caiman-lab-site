@@ -264,6 +264,14 @@
     .watch-body { padding:18px; }
     .watch-title { margin:0 0 8px; font-size:22px; letter-spacing:-.03em; }
     .watch-summary { margin:0; color: var(--muted-foreground); }
+    .watch-strip { display:flex; gap:16px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x proximity; }
+    .watch-strip::-webkit-scrollbar { height: 8px; }
+    .watch-strip::-webkit-scrollbar-thumb { background: rgba(255,255,255,.14); border-radius: 999px; }
+    .watch-card-small { min-width: 280px; max-width: 280px; flex: 0 0 280px; scroll-snap-align:start; }
+    .watch-card-small .watch-cover { aspect-ratio: 16/10; }
+    .watch-card-small .watch-title { font-size: 18px; line-height: 1.2; margin: 0 0 6px; }
+    .watch-card-small .watch-body { padding: 14px; }
+    .watch-card-small .watch-summary { font-size: 14px; line-height: 1.55; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
     .list { margin: 10px 0 0; padding-left: 18px; color: var(--muted-foreground); }
     .list li { margin: 0 0 10px; line-height: 1.65; }
     .span-2 { grid-column: span 2; }
@@ -532,12 +540,12 @@
       <div class="section-head">
         <div>
           <div class="eyebrow">Watch Later</div>
-          <h3>Saved videos, cleaner entry point.</h3>
+          <h3>Saved videos, browse like a shelf.</h3>
         </div>
-        <p>Cover, title, short summary. Open the detail page when you want the full notes.</p>
+        <p>Small cards, three-across rhythm, horizontal scrolling when the list grows.</p>
       </div>
-      <div class="grid-2">
-        <a class="card watch-card span-2" href="./watch-how-to-use-claude-skills-as-a-designer.html">
+      <div class="watch-strip">
+        <a class="card watch-card watch-card-small" href="./watch-how-to-use-claude-skills-as-a-designer.html">
           <div class="watch-cover">
             <img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="How to Use Claude Skills as a Designer thumbnail" />
           </div>
