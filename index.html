@@ -268,9 +268,9 @@
     .watch-strip::-webkit-scrollbar { height: 8px; }
     .watch-strip::-webkit-scrollbar-thumb { background: rgba(255,255,255,.14); border-radius: 999px; }
     .watch-card-small { min-width: min(31.5%, 360px); max-width: min(31.5%, 360px); flex: 0 0 min(31.5%, 360px); scroll-snap-align:start; }
-    .watch-card-small .watch-cover { aspect-ratio: 16/10; }
-    .watch-card-small .watch-title { font-size: 19px; line-height: 1.25; margin: 0; }
-    .watch-card-small .watch-body { padding: 16px; }
+    .watch-card-small .watch-cover { aspect-ratio: 16/9; }
+    .watch-card-small .watch-title { font-size: 18px; line-height: 1.35; margin: 0; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    .watch-card-small .watch-body { padding: 14px 14px 16px; }
     .watch-card-small .watch-summary { display:none; }
     @media (max-width: 980px) { .watch-card-small { min-width: 320px; max-width: 320px; flex: 0 0 320px; } }
     .list { margin: 10px 0 0; padding-left: 18px; color: var(--muted-foreground); }
@@ -551,7 +551,6 @@
             <img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="How to Use Claude Skills as a Designer thumbnail" />
           </div>
           <div class="watch-body">
-            <div class="meta">VIDEO · YOUTUBE</div>
             <h4 class="watch-title">How to Use Claude Skills as a Designer</h4>
             
           </div>
