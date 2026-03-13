@@ -258,6 +258,9 @@
     }
     .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .list { margin: 10px 0 0; padding-left: 18px; color: var(--muted-foreground); }
+    .list li { margin: 0 0 10px; line-height: 1.65; }
+    .span-2 { grid-column: span 2; }
 
     .project-card {
       display: grid;
@@ -514,6 +517,46 @@
         <article class="card simple-card">
           <h4>A living archive</h4>
           <p>Work, experiments, and notes build the brand together.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="watch-later" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Watch Later</div>
+          <h2>Saved videos worth revisiting.</h2>
+        </div>
+        <p>Short, structured summaries of videos worth coming back to. Link first, signal over noise.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card span-2">
+          <div class="meta">VIDEO · YOUTUBE · PAGE-ONLY EXTRACTION</div>
+          <h3>How to Use Claude Skills as a Designer</h3>
+          <p class="muted">Griffin Wooldridge · 9:30 · Added Mar 13, 2026</p>
+          <p>This video is a concise walkthrough of how a designer can actually use Claude Skills inside a real workflow, not as a gimmick but as reusable working methods. The focus is on practical skills like Frontend Design, Implement Design, and Brand Guidelines, and on when each one becomes useful during product and interface work.</p>
+          <div class="divider"></div>
+          <div class="grid-2">
+            <div>
+              <div class="eyebrow">Why save it</div>
+              <p class="muted">Useful as a workflow reference for turning vague “use AI for design” advice into concrete operating steps.</p>
+            </div>
+            <div>
+              <div class="eyebrow">Best for</div>
+              <p class="muted">Designers building repeatable AI-assisted flows for UI, product thinking, and implementation handoff.</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="eyebrow">Key points</div>
+          <ul class="list">
+            <li>Claude Skills are most valuable when treated as reusable workflow modules, not one-off prompts.</li>
+            <li>Design-oriented skills help separate concerns: visual direction, implementation detail, and brand consistency.</li>
+            <li>The real gain is speed with structure — less prompt rewriting, better consistency across tasks.</li>
+            <li>For designers, the strongest use case is bridging thinking and execution: idea → UI direction → implementation-ready output.</li>
+          </ul>
+          <div class="divider"></div>
+          <p><a href="https://www.youtube.com/watch?v=Iup1WlUyj9M" target="_blank" rel="noreferrer">Open original video ↗</a></p>
         </article>
       </div>
     </section>
