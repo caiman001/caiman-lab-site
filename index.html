@@ -116,9 +116,11 @@
     .explore-map-wrap .explore-sub-hd{padding:24px 28px 0}
     .explore-map-wrap .map-card{border:none;border-radius:0}
 
-    .hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px}
-    .hero-tag{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 18px;font-size:13px;color:var(--muted);transition:border-color .2s,color .2s;cursor:default}
-    .hero-tag:hover{border-color:rgba(255,255,255,.28);color:var(--fg)}
+    .hero-skills{margin-top:32px}
+    .hero-skills-label{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+    .hero-skill-list{display:flex;gap:28px;flex-wrap:wrap}
+    .hero-skill{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--fg)}
+    .skill-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
     .intel-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
     .intel-filter{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);border-radius:999px;padding:5px 12px;font-size:11px;color:var(--muted);cursor:pointer;transition:border-color .2s,color .2s,background .2s;background:transparent;font-family:'Inter',sans-serif}
     .intel-filter:hover,.intel-filter.active{border-color:rgba(255,255,255,.25);color:var(--fg);background:rgba(255,255,255,.04)}
@@ -128,6 +130,12 @@
     .cd-title{font-family:'Press Start 2P',monospace;font-size:11px !important;letter-spacing:.04em;line-height:1.8}
     @keyframes glow-pulse{0%,100%{box-shadow:0 0 0 2px rgba(255,51,51,.3),0 0 8px rgba(255,51,51,.6),0 0 16px rgba(255,51,51,.2)}50%{box-shadow:0 0 0 3px rgba(255,51,51,.4),0 0 14px rgba(255,51,51,.9),0 0 28px rgba(255,51,51,.4)}}
     #travel-map::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at 50% 50%,transparent 55%,rgba(8,8,8,.7) 100%);pointer-events:none;z-index:400}
+
+    .glass-lens{position:absolute;width:160px;height:160px;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;opacity:0;transition:opacity .5s;backdrop-filter:brightness(1.14) contrast(1.06) saturate(1.15);z-index:10}
+    .glass-lens::before{content:"";position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(rgba(255,60,60,.09) 0deg,rgba(60,60,255,.09) 120deg,rgba(60,200,60,.05) 240deg,rgba(255,60,60,.09) 360deg);filter:blur(6px)}
+    .glass-lens::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.06);background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.05) 0%,transparent 60%)}
+    .card::after,.explore-sub::after,.invest-stat::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(240px circle at var(--mx,-200px) var(--my,-200px),rgba(255,80,80,.022),transparent 55%),radial-gradient(240px circle at calc(var(--mx,-200px) + 5px) calc(var(--my,-200px) + 5px),rgba(80,80,255,.022),transparent 55%);opacity:0;transition:opacity .4s;pointer-events:none;z-index:3}
+    .card:hover::after,.explore-sub:hover::after,.invest-stat:hover::after{opacity:1}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js">
   // Invest chart
@@ -184,27 +192,23 @@
     const map = L.map('travel-map', { center: [25, 15], zoom: 2, zoomControl: true, scrollWheelZoom: false, attributionControl: true });
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,opacity:.45}).addTo(map);
-    const pin = (pulse) => L.divIcon({
-      className: '',
-      html:`<div style="width:10px;height:10px;background:#ff3333;border-radius:50%;box-shadow:0 0 0 2px rgba(255,51,51,.3),0 0 10px rgba(255,51,51,.7),0 0 20px rgba(255,51,51,.3);animation:glow-pulse 2s ease-in-out infinite"></div>`,
-      iconSize:[10,10],iconAnchor:[5,5],popupAnchor:[0,-8]
-    });
-    const places = [
-      [39.9042,116.4074,'北京 Beijing'],
-      [31.2304,121.4737,'上海 Shanghai'],
-      [22.3193,114.1694,'香港 Hong Kong'],
-      [35.6762,139.6503,'东京 Tokyo'],
-      [37.5665,126.9780,'首尔 Seoul'],
-      [1.3521,103.8198,'新加坡 Singapore'],
-      [13.7563,100.5018,'曼谷 Bangkok'],
-      [25.2048,55.2708,'迪拜 Dubai'],
-      [48.8566,2.3522,'巴黎 Paris'],
-      [51.5074,-0.1278,'伦敦 London'],
-      [40.7128,-74.0060,'纽约 New York'],
-      [34.0522,-118.2437,'洛杉矶 Los Angeles'],
+    const pin=(e)=>L.divIcon({className:'',html:`<div style="font-size:20px;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.8));cursor:pointer">${e}</div>`,iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-14]});
+    const places=[
+      [39.9042,116.4074,'北京 Beijing','🏯'],
+      [31.2304,121.4737,'上海 Shanghai','🌆'],
+      [22.3193,114.1694,'香港 Hong Kong','🌃'],
+      [35.6762,139.6503,'东京 Tokyo','⛩️'],
+      [37.5665,126.9780,'首尔 Seoul','🏙️'],
+      [1.3521,103.8198,'新加坡 Singapore','🦁'],
+      [13.7563,100.5018,'曼谷 Bangkok','🛕'],
+      [25.2048,55.2708,'迪拜 Dubai','🏗️'],
+      [48.8566,2.3522,'巴黎 Paris','🗼'],
+      [51.5074,-0.1278,'伦敦 London','🎡'],
+      [40.7128,-74.0060,'纽约 New York','🗽'],
+      [34.0522,-118.2437,'洛杉矶 Los Angeles','🎬'],
     ];
-    places.forEach(([lat,lng,name]) => {
-      L.marker([lat,lng],{icon:pin()}).addTo(map).bindPopup(name);
+    places.forEach(([lat,lng,name,emoji])=>{
+      L.marker([lat,lng],{icon:pin(emoji)}).addTo(map).bindPopup(name);
     });
   })();
 </script>
@@ -247,7 +251,7 @@
 <body>
 <header class="nav"><div class="nav-inner"><a href="#" class="nav-logo">CAIMAN.LAB</a><nav class="nav-links"><a href="#work">Work</a><a href="#intel">Intel</a><a href="#design">Design</a><a href="#explore">Explore</a></nav></div></header>
 <main>
-  <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><div class="hero-eyebrow">Personal Lab · 2026</div><h1>CAIMAN.LAB</h1><div class="hero-tags"><span class="hero-tag">直播设计</span><span class="hero-tag">创意方案</span><span class="hero-tag">产品动效</span><span class="hero-tag">视觉品牌</span></div></div></section>
+  <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><div class="hero-eyebrow">Personal Lab · 2026</div><h1>CAIMAN.LAB</h1><div class="hero-skills"><div class="hero-skills-label">专业技能</div><div class="hero-skill-list"><span class="hero-skill"><span class="skill-dot" style="background:#818cf8"></span>直播设计</span><span class="hero-skill"><span class="skill-dot" style="background:#06b6d4"></span>创意方案</span><span class="hero-skill"><span class="skill-dot" style="background:#22c55e"></span>产品动效</span><span class="hero-skill"><span class="skill-dot" style="background:#f59e0b"></span>视觉品牌</span></div></div></div></section>
   <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Spring OS</span></div></div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Studio Flow</span></div></div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
   <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="intel-filters" data-fade>
       <button class="intel-filter active" data-src="all">全部</button>
@@ -420,6 +424,21 @@
       });
     });
   });
+  // Glass lens on hero
+  (function(){
+    const hero=document.querySelector('.hero');
+    if(!hero)return;
+    const lens=document.createElement('div');
+    lens.className='glass-lens';
+    hero.appendChild(lens);
+    hero.addEventListener('mousemove',e=>{
+      const r=hero.getBoundingClientRect();
+      lens.style.left=(e.clientX-r.left)+'px';
+      lens.style.top=(e.clientY-r.top)+'px';
+      lens.style.opacity='1';
+    });
+    hero.addEventListener('mouseleave',()=>{lens.style.opacity='0';});
+  })();
 </script>
 </body>
 </html>
