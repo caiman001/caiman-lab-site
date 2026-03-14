@@ -264,6 +264,12 @@
     .watch-body { padding:18px; }
     .watch-title { margin:0 0 8px; font-size:22px; letter-spacing:-.03em; }
     .watch-summary { margin:0; color: var(--muted-foreground); }
+
+    .watch-card { display:block; color:inherit; text-decoration:none; overflow:hidden; }
+    .watch-card .watch-cover { aspect-ratio: 16/9; background:#151518; overflow:hidden; }
+    .watch-card .watch-cover img { width:100%; height:100%; object-fit:cover; display:block; }
+    .watch-card .watch-body { padding:16px; }
+    .watch-card .watch-title { margin:0; font-size:17px; line-height:1.35; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
     .watch-strip { display:flex; gap:16px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x proximity; }
     .watch-strip::-webkit-scrollbar { height: 8px; }
     .watch-strip::-webkit-scrollbar-thumb { background: rgba(255,255,255,.14); border-radius: 999px; }
@@ -376,11 +382,13 @@
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#top">CAIMAN.LAB</a>
-      <nav class="nav-links">
-        <a class="button ghost" href="#work">Work</a>
-        <a class="button ghost" href="#lab">Lab</a>
-        <a class="button ghost" href="#notes">Notes</a>
-        <a class="button ghost" href="#about">About</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#intel">Intel</a>
+        <a href="#design">Design</a>
+        <a href="#invest">Invest</a>
+        <a href="#english">English</a>
+        <a href="#entertainment">Entertainment</a>
       </nav>
     </div>
   </header>
@@ -494,90 +502,146 @@
       </div>
     </section>
 
-    <section id="lab" class="section">
-      <div class="section-head">
-        <h3>Lab</h3>
-        <p>Research and tests.</p>
-      </div>
-      <div class="grid-3">
-        <article class="card simple-card">
-          <h4>Prompt Studies</h4>
-          <p>Reference breakdown, style locking, drift control.</p>
-        </article>
-        <article class="card simple-card">
-          <h4>Interactive Fragments</h4>
-          <p>Glass, depth, floating objects, slow rhythm.</p>
-        </article>
-        <article class="card simple-card">
-          <h4>Image Systems</h4>
-          <p>Turning taste into reusable method.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="notes" class="section">
-      <div class="section-head">
-        <h3>Notes</h3>
-        <p>Public thinking.</p>
-      </div>
-      <div class="grid-3">
-        <article class="card simple-card">
-          <h4>Keep visuals on-style</h4>
-          <p>Lock lineage first, then render language.</p>
-        </article>
-        <article class="card simple-card">
-          <h4>Minimal isn’t empty</h4>
-          <p>Clarity comes from spacing, not deletion.</p>
-        </article>
-        <article class="card simple-card">
-          <h4>A living archive</h4>
-          <p>Work, experiments, and notes build the brand together.</p>
-        </article>
-      </div>
-    </section>
-
-
-    <section id="watch-later" class="section">
+    <section id="intel" class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">Watch Later</div>
-          <h3>Saved videos, browse like a shelf.</h3>
+          <div class="eyebrow">Intel</div>
+          <h3>Signals worth tracking.</h3>
         </div>
-        <p>Small cards, three-across rhythm, horizontal scrolling when the list grows.</p>
+        <p>Curated links, videos, and reads from the intel feed.</p>
       </div>
-      <div class="watch-strip">
-        <a class="card watch-card watch-card-small" href="./watch-how-to-use-claude-skills-as-a-designer.html">
+      <div class="grid-3">
+        <a class="card watch-card" href="./watch-how-to-use-claude-skills-as-a-designer.html">
           <div class="watch-cover">
-            <img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="How to Use Claude Skills as a Designer thumbnail" />
+            <img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="How to Use Claude Skills as a Designer" />
           </div>
           <div class="watch-body">
             <h4 class="watch-title">How to Use Claude Skills as a Designer</h4>
-            
           </div>
         </a>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 02</h4>
+          <p class="muted">Next intel drop goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 03</h4>
+          <p class="muted">Next intel drop goes here.</p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="design" class="section">
       <div class="section-head">
-        <h3>About</h3>
-        <p>Short identity statement.</p>
+        <div>
+          <div class="eyebrow">Design</div>
+          <h3>Visual systems and UI work.</h3>
+        </div>
+        <p>Design experiments, references, and production notes.</p>
       </div>
       <div class="grid-3">
-        <article class="card simple-card">
-          <h4>Visual Direction</h4>
-          <p>Visual systems, interface design, AI image workflows.</p>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 01</h4>
+          <p class="muted">Design content goes here.</p>
         </article>
-        <article class="card simple-card">
-          <h4>Stack</h4>
-          <p>Figma, Next.js, TypeScript, Motion.</p>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 02</h4>
+          <p class="muted">Design content goes here.</p>
         </article>
-        <article class="card simple-card">
-          <h4>Focus</h4>
-          <p>Projects, experiments, notes, and continuity.</p>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 03</h4>
+          <p class="muted">Design content goes here.</p>
         </article>
       </div>
     </section>
+
+    <section id="invest" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Invest</div>
+          <h3>Market reads and financial signals.</h3>
+        </div>
+        <p>Investment notes, macro reads, and tracked positions.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 01</h4>
+          <p class="muted">Investment content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 02</h4>
+          <p class="muted">Investment content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 03</h4>
+          <p class="muted">Investment content goes here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="english" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">English</div>
+          <h3>Language inputs worth keeping.</h3>
+        </div>
+        <p>Vocabulary, reads, and listening material.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 01</h4>
+          <p class="muted">English content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 02</h4>
+          <p class="muted">English content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 03</h4>
+          <p class="muted">English content goes here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="entertainment" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Entertainment</div>
+          <h3>Things worth watching and playing.</h3>
+        </div>
+        <p>Films, games, music, and leisure picks.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 01</h4>
+          <p class="muted">Entertainment content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 02</h4>
+          <p class="muted">Entertainment content goes here.</p>
+        </article>
+        <article class="card">
+          <div class="meta">COMING SOON</div>
+          <h4>Slot 03</h4>
+          <p class="muted">Entertainment content goes here.</p>
+        </article>
+      </div>
+    </section>
+
+
+
 
     <footer class="footer">Built with a shadcn/ui-like structure and component rhythm.</footer>
   </main>
