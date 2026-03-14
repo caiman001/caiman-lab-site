@@ -6,16 +6,16 @@
   <title>CAIMAN.LAB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root{--bg:#080808;--fg:#e8e8e8;--border:#1c1c1c;--border-hover:#2c2c2c;--muted:#555;--radius:10px;--max:1080px}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
-    h1,h2,h3,h4{font-family:'Syne','Inter',ui-sans-serif,system-ui,sans-serif}
+    h1,h2,h3,h4{font-family:'Cormorant Garamond','Georgia',ui-serif,serif}
     .nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);background:rgba(8,8,8,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
     .nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;height:52px;display:flex;align-items:center;justify-content:space-between}
-    .nav-logo{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--fg);text-decoration:none}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--fg);text-decoration:none}
     .nav-links{display:flex;gap:2px}
     .nav-links a{color:var(--muted);text-decoration:none;font-size:13px;padding:5px 12px;border-radius:6px;transition:color .15s,background .15s}
     .nav-links a:hover,.nav-links a.active{color:var(--fg);background:rgba(255,255,255,.05)}
@@ -25,40 +25,40 @@
     .hero-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black 20%,transparent 100%)}
     .hero .container{position:relative;z-index:1}
     .hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:32px}
-    .hero h1{font-size:clamp(64px,10vw,112px);font-weight:800;letter-spacing:-.06em;line-height:.9;margin-bottom:28px}
+    .hero h1{font-size:clamp(64px,10vw,112px);font-weight:700;letter-spacing:-.03em;line-height:.88;margin-bottom:28px;font-style:italic}
     .hero p{color:var(--muted);font-size:16px;max-width:440px;line-height:1.75}
     .section{padding:120px 0;border-bottom:1px solid var(--border)}
     .section:last-of-type{border-bottom:none}
     .section-header{margin-bottom:56px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
     .eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-    .section-header h2{font-size:clamp(30px,4vw,46px);font-weight:700;letter-spacing:-.05em;line-height:1.05}
+    .section-header h2{font-size:clamp(30px,4vw,46px);font-weight:700;letter-spacing:-.02em;line-height:1.05;font-style:italic}
     .section-header p{color:var(--muted);font-size:14px;max-width:300px;text-align:right;line-height:1.7;flex-shrink:0}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .card{background:rgba(255,255,255,.018);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s,transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s,background .2s}
-    .card:hover{background:rgba(255,255,255,.03);border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,.6)}
+    .card:hover{background:rgba(255,255,255,.025);border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.7)}
     .work-card{display:block;text-decoration:none;color:inherit}
-    .work-thumb{height:220px;background:linear-gradient(135deg,#0e0e0e 0%,#161618 100%);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.08);text-transform:uppercase;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
-    .work-thumb::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(255,255,255,.025) 0%,transparent 70%)}
+    .work-thumb{height:220px;background:linear-gradient(135deg,#0e0e0e 0%,#161618 100%);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.08);text-transform:uppercase;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+    .work-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.16,1,.3,1);filter:brightness(.5) saturate(.6)}.work-card:hover .work-thumb img{transform:scale(1.06);filter:brightness(.6) saturate(.7)}.work-thumb-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(8,8,8,.85) 100%)}
     .work-body{padding:24px 26px 26px}
     .work-num{font-size:11px;color:var(--muted);margin-bottom:12px;letter-spacing:.06em}
-    .work-card h3{font-family:'Syne',sans-serif;font-size:24px;font-weight:700;letter-spacing:-.04em;margin-bottom:8px}
+    .work-card h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;letter-spacing:-.04em;margin-bottom:8px}
     .work-card p{color:var(--muted);font-size:13px;line-height:1.65}
     .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
     .tag{border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:11px;color:var(--muted)}
     .content-card{display:block;text-decoration:none;color:inherit}
     .card-cover{aspect-ratio:16/9;overflow:hidden;background:#0e0e0e;border-bottom:1px solid var(--border)}
-    .card-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s cubic-bezier(.22,1,.36,1)}
-    .content-card:hover .card-cover img{transform:scale(1.04)}
+    .card-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.16,1,.3,1);filter:brightness(.75) saturate(.8)}
+    .content-card:hover .card-cover img{transform:scale(1.05);filter:brightness(.85) saturate(.9)}
     .card-foot{padding:16px 18px 20px}
     .card-label{font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
     .card-title{font-size:15px;font-weight:500;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
     .placeholder{border-style:dashed;opacity:.25;pointer-events:none}
-    [data-fade]{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+    [data-fade]{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
     [data-fade].visible{opacity:1;transform:none}
-    [data-fade][data-delay="1"]{transition-delay:.1s}
-    [data-fade][data-delay="2"]{transition-delay:.2s}
-    [data-fade][data-delay="3"]{transition-delay:.3s}
+    [data-fade][data-delay="1"]{transition-delay:.12s}
+    [data-fade][data-delay="2"]{transition-delay:.24s}
+    [data-fade][data-delay="3"]{transition-delay:.36s}
     .invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
     .invest-stat{position:relative;border-radius:var(--radius);padding:22px 24px;background:linear-gradient(135deg,rgba(6,182,212,.04) 0%,rgba(99,102,241,.04) 100%);overflow:hidden}
     .invest-stat::before{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;background:linear-gradient(135deg,rgba(6,182,212,.35),rgba(99,102,241,.15),transparent 65%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
@@ -74,12 +74,12 @@
     .invest-chart-canvas{height:200px}
     .cd-card{border:1px solid var(--border);border-radius:var(--radius);padding:36px 32px 28px}
     .cd-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:12px}
-    .cd-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
+    .cd-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
     .cd-subtitle{font-size:13px;color:var(--muted)}
     .cd-badge{border:1px solid rgba(99,102,241,.4);background:rgba(99,102,241,.08);border-radius:999px;padding:4px 12px;font-size:12px;color:#818cf8;white-space:nowrap}
     .cd-nums{display:flex;align-items:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
     .cd-unit{text-align:center;min-width:80px}
-    .cd-num{font-family:'Syne',sans-serif;font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#e8e8e8 0%,#888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .cd-num{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#e8e8e8 0%,#888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .cd-unit-label{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
     .cd-sep{font-size:40px;font-weight:300;color:var(--border);line-height:1;padding-bottom:20px}
     .cd-progress-wrap{margin-bottom:12px}
@@ -223,9 +223,9 @@
 <header class="nav"><div class="nav-inner"><a href="#" class="nav-logo">CAIMAN.LAB</a><nav class="nav-links"><a href="#work">Work</a><a href="#intel">Intel</a><a href="#design">Design</a><a href="#invest">Invest</a><a href="#english">English</a><a href="#entertainment">Entertainment</a></nav></div></header>
 <main>
   <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><div class="hero-eyebrow">Personal Lab · 2026</div><h1>CAIMAN.LAB</h1><p>个人网站实验，记录工作、实验与思考。</p></div></section>
-  <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb">SPRING OS</div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb">STUDIO FLOW</div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
-  <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="grid-3"><a class="card content-card" href="./watch-how-to-use-claude-skills-as-a-designer.html" data-fade data-delay="1"><div class="card-cover"><img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="thumbnail" /></div><div class="card-foot"><div class="card-label">Video &middot; YouTube</div><div class="card-title">How to Use Claude Skills as a Designer</div></div></a><article class="card placeholder" data-fade data-delay="2"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">下一条情报</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">下一条情报</div></div></article></div></div></section>
-  <section id="design" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Design</div><h2>攒劲设计💡</h2></div><p>设计实验、参考资料与生产笔记。</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">设计内容</div></div></article></div></div></section>
+  <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb"><img src="https://picsum.photos/seed/springos/800/480" alt="" loading="lazy"><div class="work-thumb-ov"></div></div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb"><img src="https://picsum.photos/seed/studioflow/800/480" alt="" loading="lazy"><div class="work-thumb-ov"></div></div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
+  <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="grid-3"><a class="card content-card" href="./watch-how-to-use-claude-skills-as-a-designer.html" data-fade data-delay="1"><div class="card-cover"><img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="thumbnail" /></div><div class="card-foot"><div class="card-label">Video &middot; YouTube</div><div class="card-title">How to Use Claude Skills as a Designer</div></div></a><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><img src="https://picsum.photos/seed/intel2/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><img src="https://picsum.photos/seed/intel3/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article></div></div></section>
+  <section id="design" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Design</div><h2>攒劲设计💡</h2></div><p>设计实验、参考资料与生产笔记。</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-cover"><img src="https://picsum.photos/seed/design1/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><img src="https://picsum.photos/seed/design2/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><img src="https://picsum.photos/seed/design3/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article></div></div></section>
   <section id="invest" class="section"><div class="container">
     <div class="section-header" data-fade><div><div class="eyebrow">Invest</div><h2>股票理财🤑</h2></div><p>投资agent准确性追踪。</p></div>
     <div data-fade>
@@ -282,7 +282,7 @@
     </div>
   </div></section>
 </main>
-<footer><div class="container"><p>CAIMAN.LAB &mdash; OpenClaw 设计工作区静态导出</p><p>shadcn/ui 结构与组件节奏</p></div></footer>
+<footer><div class="container"><p>CAIMAN.LAB &mdash; OpenClaw 设计工作区静态导出</p><p>Designed with care · 2026</p></div></footer>
 <script>
   const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("visible");obs.unobserve(x.target)}})},{threshold:0.07,rootMargin:"0px 0px -24px 0px"});
   document.querySelectorAll("[data-fade]").forEach(el=>obs.observe(el));
