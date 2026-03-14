@@ -60,8 +60,8 @@
     [data-fade][data-delay="2"]{transition-delay:.24s}
     [data-fade][data-delay="3"]{transition-delay:.36s}
     .invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
-    .invest-stat{position:relative;border-radius:var(--radius);padding:22px 24px;background:linear-gradient(135deg,rgba(6,182,212,.04) 0%,rgba(99,102,241,.04) 100%);overflow:hidden}
-    .invest-stat::before{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;background:linear-gradient(135deg,rgba(6,182,212,.35),rgba(99,102,241,.15),transparent 65%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+    .invest-stat{position:relative;border-radius:var(--radius);padding:22px 24px;background:linear-gradient(135deg,rgba(6,182,212,.04) 0%,rgba(6,182,212,.04) 100%);overflow:hidden}
+    .invest-stat::before{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;background:linear-gradient(135deg,rgba(6,182,212,.35),rgba(6,182,212,.15),transparent 65%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
     .invest-stat-label{font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
     .invest-stat-value{font-size:34px;font-weight:600;letter-spacing:-.04em;line-height:1}
     .invest-stat-value.cyan{color:#06b6d4;text-shadow:0 0 24px rgba(6,182,212,.4)}
@@ -76,7 +76,7 @@
     .cd-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:12px}
     .cd-title{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
     .cd-subtitle{font-size:13px;color:var(--muted)}
-    .cd-badge{border:1px solid rgba(99,102,241,.4);background:rgba(99,102,241,.08);border-radius:999px;padding:4px 12px;font-size:12px;color:#818cf8;white-space:nowrap}
+    .cd-badge{border:1px solid rgba(6,182,212,.4);background:rgba(6,182,212,.08);border-radius:999px;padding:4px 12px;font-size:12px;color:#60a5fa;white-space:nowrap}
     .cd-nums{display:flex;align-items:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
     .cd-unit{text-align:center;min-width:80px}
     .cd-num{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#e8e8e8 0%,#888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -84,7 +84,7 @@
     .cd-sep{font-size:40px;font-weight:300;color:var(--border);line-height:1;padding-bottom:20px}
     .cd-progress-wrap{margin-bottom:12px}
     .cd-progress-track{height:3px;background:var(--border);border-radius:999px;overflow:hidden}
-    .cd-progress-fill{height:100%;background:linear-gradient(90deg,#6366f1,#818cf8);border-radius:999px;transition:width .5s ease}
+    .cd-progress-fill{height:100%;background:linear-gradient(90deg,#0891b2,#60a5fa);border-radius:999px;transition:width .5s ease}
     .cd-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
     .map-card{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
     .map-stats{display:flex;gap:32px;padding:24px 28px 20px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
@@ -150,7 +150,7 @@
     .hero-email:hover{transform:scale(1.12)}
     .email-icon{font-size:28px;line-height:1}
 
-    .hero-bio{font-size:14px;color:rgba(255,255,255,.5);margin:0;font-family:'Inter',sans-serif;line-height:1.5}
+    .hero-bio{font-size:14px;color:rgba(255,255,255,.55);margin:0;font-family:'Inter',sans-serif;line-height:1.5;font-weight:600}
     
     .copy-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(12px);background:#22c55e;color:#fff;padding:8px 22px;border-radius:999px;font-size:13px;font-family:'Inter',sans-serif;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;z-index:9999}
     .copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -268,7 +268,7 @@
 <body>
 <header class="nav"><div class="nav-inner"><a href="#" class="nav-logo">CAIMAN.LAB</a><nav class="nav-links"><a href="#work">Work</a><a href="#intel">Intel</a><a href="#design">Design</a><a href="#explore">Explore</a></nav></div></header>
 <main>
-  <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><div class="hero-title-row"><div class="avatar-ring">C</div><h1>CAIMAN.LAB</h1></div><div class="hero-desc"><p class="hero-bio">👋 Hi, I'm Caiman, a Motion Designer</p><div class="hero-skill-list"><span class="hero-skill"><span class="skill-dot" style="background:#818cf8"></span>直播设计</span><span class="hero-skill"><span class="skill-dot" style="background:#06b6d4"></span>创意方案</span><span class="hero-skill"><span class="skill-dot" style="background:#22c55e"></span>产品动效</span><span class="hero-skill"><span class="skill-dot" style="background:#f59e0b"></span>视觉品牌</span></div></div></div></section>
+  <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><h1>CAIMAN.LAB</h1><div class="hero-desc"><p class="hero-bio">👋 Hi, I'm Caiman, a Motion Designer</p><div class="hero-skill-list"><span class="hero-skill"><span class="skill-dot" style="background:#60a5fa"></span>直播设计</span><span class="hero-skill"><span class="skill-dot" style="background:#06b6d4"></span>创意方案</span><span class="hero-skill"><span class="skill-dot" style="background:#22c55e"></span>产品动效</span><span class="hero-skill"><span class="skill-dot" style="background:#f59e0b"></span>视觉品牌</span></div></div></div></section>
   <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Spring OS</span></div></div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Studio Flow</span></div></div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
   <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="intel-filters" data-fade>
       <button class="intel-filter active" data-src="all">全部</button>
@@ -464,12 +464,22 @@
   (function(){
     const el=document.getElementById('footer-email');
     const toast=document.getElementById('copy-toast');
-    if(!el||!toast)return;
+    if(!el)return;
+    const show=()=>{
+      if(toast){toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2000);}
+    };
     el.addEventListener('click',()=>{
-      navigator.clipboard.writeText('caimandesign1@gmail.com').then(()=>{
-        toast.classList.add('show');
-        setTimeout(()=>toast.classList.remove('show'),2000);
-      });
+      if(navigator.clipboard){
+        navigator.clipboard.writeText('caimandesign1@gmail.com').then(show).catch(()=>{
+          const ta=document.createElement('textarea');ta.value='caimandesign1@gmail.com';
+          document.body.appendChild(ta);ta.select();document.execCommand('copy');
+          document.body.removeChild(ta);show();
+        });
+      } else {
+        const ta=document.createElement('textarea');ta.value='caimandesign1@gmail.com';
+        document.body.appendChild(ta);ta.select();document.execCommand('copy');
+        document.body.removeChild(ta);show();
+      }
     });
   })();
 </script>
