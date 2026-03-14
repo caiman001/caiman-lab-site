@@ -75,6 +75,21 @@
     .stars { color: #f59e0b; letter-spacing: 2px; }
     .chart-wrap { position: relative; height: 260px; }
     .chart-note { font-size: 12px; color: var(--muted); margin-top: 16px; text-align: right; }
+
+    .cd-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 32px 28px; }
+    .cd-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 36px; flex-wrap: wrap; gap: 12px; }
+    .cd-title { font-size: 18px; font-weight: 600; letter-spacing: -.03em; margin-bottom: 4px; }
+    .cd-subtitle { font-size: 13px; color: var(--muted); }
+    .cd-badge { border: 1px solid rgba(99,102,241,.4); background: rgba(99,102,241,.08); border-radius: 999px; padding: 4px 12px; font-size: 12px; color: #818cf8; white-space: nowrap; }
+    .cd-nums { display: flex; align-items: center; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
+    .cd-unit { text-align: center; min-width: 80px; }
+    .cd-num { font-size: clamp(40px,6vw,64px); font-weight: 600; letter-spacing: -.05em; line-height: 1; font-variant-numeric: tabular-nums; background: linear-gradient(135deg,#f4f4f5 0%,#a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cd-unit-label { font-size: 11px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; margin-top: 8px; }
+    .cd-sep { font-size: 40px; font-weight: 300; color: var(--border); line-height: 1; padding-bottom: 20px; }
+    .cd-progress-wrap { margin-bottom: 12px; }
+    .cd-progress-track { height: 4px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .cd-progress-fill { height: 100%; background: linear-gradient(90deg,#6366f1,#818cf8); border-radius: 999px; transition: width .5s ease; }
+    .cd-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js">
   // Invest chart
@@ -143,6 +158,40 @@
       }
     });
   })();
+
+  // Countdown
+  (function(){
+    const target = new Date('2026-06-14T00:00:00+08:00').getTime();
+    const start  = new Date('2026-03-14T00:00:00+08:00').getTime();
+    const total  = target - start;
+    function pad(n){ return String(Math.floor(n)).padStart(2,'0'); }
+    function tick(){
+      const now  = Date.now();
+      const diff = target - now;
+      if(diff <= 0){
+        document.getElementById('cd-days').textContent = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent = '00';
+        document.getElementById('cd-secs').textContent = '00';
+        document.getElementById('cd-pct').textContent = '备考完成 100%';
+        document.getElementById('cd-bar').style.width = '100%';
+        return;
+      }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor((diff%86400000)/3600000);
+      const m = Math.floor((diff%3600000)/60000);
+      const s = Math.floor((diff%60000)/1000);
+      document.getElementById('cd-days').textContent  = pad(d);
+      document.getElementById('cd-hours').textContent = pad(h);
+      document.getElementById('cd-mins').textContent  = pad(m);
+      document.getElementById('cd-secs').textContent  = pad(s);
+      const pct = Math.min(100, Math.round((now - start) / total * 100));
+      document.getElementById('cd-bar').style.width = pct + '%';
+      document.getElementById('cd-pct').textContent = '备考进度 ' + pct + '%';
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
 </script>
 </head>
 <body>
@@ -165,7 +214,34 @@
       <p class="chart-note">数据每日更新 · 满分 5 星</p>
     </div>
   </div></section>
-  <section id="english" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">English</div><h2>语言学习🙇‍♂️</h2></div><p>雅思通过倒计时</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">英语内容</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">英语内容</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">英语内容</div></div></article></div></div></section>
+  <section id="english" class="section"><div class="container">
+    <div class="section-header" data-fade><div><div class="eyebrow">English</div><h2>语言学习🙇‍♂️</h2></div><p>雅思通过倒计时</p></div>
+    <div class="cd-card" data-fade>
+      <div class="cd-header">
+        <div>
+          <div class="cd-title">距离雅思考试</div>
+          <div class="cd-subtitle">目标：2026年6月14日 · 从今天开始备考</div>
+        </div>
+        <div class="cd-badge">🎯 目标 Band 7.0</div>
+      </div>
+      <div class="cd-nums">
+        <div class="cd-unit"><div class="cd-num" id="cd-days">--</div><div class="cd-unit-label">天</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-hours">--</div><div class="cd-unit-label">时</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-mins">--</div><div class="cd-unit-label">分</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-secs">--</div><div class="cd-unit-label">秒</div></div>
+      </div>
+      <div class="cd-progress-wrap">
+        <div class="cd-progress-track"><div class="cd-progress-fill" id="cd-bar" style="width:0%"></div></div>
+      </div>
+      <div class="cd-meta">
+        <span>开始：2026年3月14日</span>
+        <span id="cd-pct">备考进度 0%</span>
+      </div>
+    </div>
+  </div></section>
   <section id="entertainment" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Entertainment</div><h2>旅游攻略🗺️</h2></div><p>出门打卡记录</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">旅游攻略</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">旅游攻略</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-foot" style="padding:24px"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.5">旅游攻略</div></div></article></div></div></section>
 </main>
 <footer><div class="container"><p>CAIMAN.LAB &mdash; OpenClaw 设计工作区静态导出</p><p>shadcn/ui 结构与组件节奏</p></div></footer>
@@ -240,6 +316,40 @@
         }
       }
     });
+  })();
+
+  // Countdown
+  (function(){
+    const target = new Date('2026-06-14T00:00:00+08:00').getTime();
+    const start  = new Date('2026-03-14T00:00:00+08:00').getTime();
+    const total  = target - start;
+    function pad(n){ return String(Math.floor(n)).padStart(2,'0'); }
+    function tick(){
+      const now  = Date.now();
+      const diff = target - now;
+      if(diff <= 0){
+        document.getElementById('cd-days').textContent = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent = '00';
+        document.getElementById('cd-secs').textContent = '00';
+        document.getElementById('cd-pct').textContent = '备考完成 100%';
+        document.getElementById('cd-bar').style.width = '100%';
+        return;
+      }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor((diff%86400000)/3600000);
+      const m = Math.floor((diff%3600000)/60000);
+      const s = Math.floor((diff%60000)/1000);
+      document.getElementById('cd-days').textContent  = pad(d);
+      document.getElementById('cd-hours').textContent = pad(h);
+      document.getElementById('cd-mins').textContent  = pad(m);
+      document.getElementById('cd-secs').textContent  = pad(s);
+      const pct = Math.min(100, Math.round((now - start) / total * 100));
+      document.getElementById('cd-bar').style.width = pct + '%';
+      document.getElementById('cd-pct').textContent = '备考进度 ' + pct + '%';
+    }
+    tick();
+    setInterval(tick, 1000);
   })();
 </script>
 </body>
