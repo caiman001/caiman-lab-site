@@ -12,10 +12,10 @@
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
-    h1,h2,h3,h4{font-family:'Cormorant Garamond','Georgia',ui-serif,serif}
+    h1,h2,h3,h4{font-family:'Cormorant Garamond','Georgia',ui-serif,'PingFang SC','PingFang TC','Noto Sans CJK SC',sans-serif}
     .nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);background:rgba(8,8,8,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
     .nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;height:52px;display:flex;align-items:center;justify-content:space-between}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--fg);text-decoration:none}
+    .nav-logo{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--fg);text-decoration:none}
     .nav-links{display:flex;gap:2px}
     .nav-links a{color:var(--muted);text-decoration:none;font-size:13px;padding:5px 12px;border-radius:6px;transition:color .15s,background .15s}
     .nav-links a:hover,.nav-links a.active{color:var(--fg);background:rgba(255,255,255,.05)}
@@ -38,11 +38,11 @@
     .card{background:rgba(255,255,255,.018);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s,transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s,background .2s}
     .card:hover{background:rgba(255,255,255,.025);border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.7)}
     .work-card{display:block;text-decoration:none;color:inherit}
-    .work-thumb{height:220px;background:linear-gradient(135deg,#0e0e0e 0%,#161618 100%);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.08);text-transform:uppercase;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+    .work-thumb{height:220px;background:linear-gradient(135deg,#0e0e0e 0%,#161618 100%);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.08);text-transform:uppercase;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
     .work-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.16,1,.3,1);filter:brightness(.5) saturate(.6)}.work-card:hover .work-thumb img{transform:scale(1.06);filter:brightness(.6) saturate(.7)}.work-thumb-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(8,8,8,.85) 100%)}
     .work-body{padding:24px 26px 26px}
     .work-num{font-size:11px;color:var(--muted);margin-bottom:12px;letter-spacing:.06em}
-    .work-card h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;letter-spacing:-.04em;margin-bottom:8px}
+    .work-card h3{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:24px;font-weight:700;letter-spacing:-.04em;margin-bottom:8px}
     .work-card p{color:var(--muted);font-size:13px;line-height:1.65}
     .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
     .tag{border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:11px;color:var(--muted)}
@@ -74,12 +74,12 @@
     .invest-chart-canvas{height:200px}
     .cd-card{border:1px solid var(--border);border-radius:var(--radius);padding:36px 32px 28px}
     .cd-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:12px}
-    .cd-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
+    .cd-title{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
     .cd-subtitle{font-size:13px;color:var(--muted)}
     .cd-badge{border:1px solid rgba(99,102,241,.4);background:rgba(99,102,241,.08);border-radius:999px;padding:4px 12px;font-size:12px;color:#818cf8;white-space:nowrap}
     .cd-nums{display:flex;align-items:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
     .cd-unit{text-align:center;min-width:80px}
-    .cd-num{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#e8e8e8 0%,#888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .cd-num{font-family:'Cormorant Garamond','PingFang SC',sans-serif;font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#e8e8e8 0%,#888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .cd-unit-label{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
     .cd-sep{font-size:40px;font-weight:300;color:var(--border);line-height:1;padding-bottom:20px}
     .cd-progress-wrap{margin-bottom:12px}
@@ -101,6 +101,12 @@
     .leaflet-control-zoom a:hover{background:#1e1e1e !important;color:#e8e8e8 !important}
     .leaflet-control-attribution{background:rgba(8,8,8,.7) !important;color:#444 !important;font-size:10px !important}
     .leaflet-control-attribution a{color:#444 !important}
+
+    .thumb-grid{width:100%;height:100%;background:#0b0b0b;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:24px 24px;display:flex;align-items:center;justify-content:center;position:relative}
+    .thumb-grid-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.13);font-family:'Inter',sans-serif;position:relative;z-index:1}
+    .card{position:relative}
+    .card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(320px circle at var(--mx,-200px) var(--my,-200px),rgba(255,255,255,.05),transparent 70%);opacity:0;transition:opacity .4s;pointer-events:none;z-index:2}
+    .card:hover::before{opacity:1}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js">
   // Invest chart
@@ -223,9 +229,9 @@
 <header class="nav"><div class="nav-inner"><a href="#" class="nav-logo">CAIMAN.LAB</a><nav class="nav-links"><a href="#work">Work</a><a href="#intel">Intel</a><a href="#design">Design</a><a href="#invest">Invest</a><a href="#english">English</a><a href="#entertainment">Entertainment</a></nav></div></header>
 <main>
   <section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container"><div class="hero-eyebrow">Personal Lab · 2026</div><h1>CAIMAN.LAB</h1><p>个人网站实验，记录工作、实验与思考。</p></div></section>
-  <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb"><img src="https://picsum.photos/seed/springos/800/480" alt="" loading="lazy"><div class="work-thumb-ov"></div></div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb"><img src="https://picsum.photos/seed/studioflow/800/480" alt="" loading="lazy"><div class="work-thumb-ov"></div></div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
-  <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="grid-3"><a class="card content-card" href="./watch-how-to-use-claude-skills-as-a-designer.html" data-fade data-delay="1"><div class="card-cover"><img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="thumbnail" /></div><div class="card-foot"><div class="card-label">Video &middot; YouTube</div><div class="card-title">How to Use Claude Skills as a Designer</div></div></a><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><img src="https://picsum.photos/seed/intel2/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><img src="https://picsum.photos/seed/intel3/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article></div></div></section>
-  <section id="design" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Design</div><h2>攒劲设计💡</h2></div><p>设计实验、参考资料与生产笔记。</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-cover"><img src="https://picsum.photos/seed/design1/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><img src="https://picsum.photos/seed/design2/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><img src="https://picsum.photos/seed/design3/800/450" alt="" loading="lazy"></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article></div></div></section>
+  <section id="work" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Work</div><h2>精选项目👨‍💻</h2></div><p>最新做的项目实验</p></div><div class="grid-2"><a class="card work-card" data-fade data-delay="1"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Spring OS</span></div></div><div class="work-body"><div class="work-num">01 &middot; BRAND / PRODUCT / AI</div><h3>Spring OS</h3><p>为创意工具设计的视觉与交互语言。</p><div class="tags"><span class="tag">Brand</span><span class="tag">Product</span><span class="tag">AI</span></div></div></a><a class="card work-card" data-fade data-delay="2"><div class="work-thumb"><div class="thumb-grid"><span class="thumb-grid-label">Studio Flow</span></div></div><div class="work-body"><div class="work-num">02 &middot; INTERFACE / MOTION / SYSTEMS</div><h3>Studio Flow</h3><p>具有电影节奏感的 AI 工作空间。</p><div class="tags"><span class="tag">Interface</span><span class="tag">Motion</span><span class="tag">Systems</span></div></div></a></div></div></section>
+  <section id="intel" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Intel</div><h2>最近在看👀</h2></div><p>精选链接、视频与阅读材料。</p></div><div class="grid-3"><a class="card content-card" href="./watch-how-to-use-claude-skills-as-a-designer.html" data-fade data-delay="1"><div class="card-cover"><img src="https://i.ytimg.com/vi/Iup1WlUyj9M/hqdefault.jpg" alt="thumbnail" /></div><div class="card-foot"><div class="card-label">Video &middot; YouTube</div><div class="card-title">How to Use Claude Skills as a Designer</div></div></a><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><div class="thumb-grid"></div></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><div class="thumb-grid"></div></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">下一条情报</div></div></article></div></div></section>
+  <section id="design" class="section"><div class="container"><div class="section-header" data-fade><div><div class="eyebrow">Design</div><h2>攒劲设计💡</h2></div><p>设计实验、参考资料与生产笔记。</p></div><div class="grid-3"><article class="card placeholder" data-fade data-delay="1"><div class="card-cover"><div class="thumb-grid"></div></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="2"><div class="card-cover"><div class="thumb-grid"></div></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article><article class="card placeholder" data-fade data-delay="3"><div class="card-cover"><div class="thumb-grid"></div></div><div class="card-foot"><div class="card-label">Coming Soon</div><div class="card-title" style="opacity:.4">设计内容</div></div></article></div></div></section>
   <section id="invest" class="section"><div class="container">
     <div class="section-header" data-fade><div><div class="eyebrow">Invest</div><h2>股票理财🤑</h2></div><p>投资agent准确性追踪。</p></div>
     <div data-fade>
@@ -368,6 +374,19 @@
       L.marker([lat,lng],{icon:pin()}).addTo(map).bindPopup(name);
     });
   })();
+</script>
+<script>
+  document.querySelectorAll('.card').forEach(c=>{
+    c.addEventListener('mousemove',e=>{
+      const r=c.getBoundingClientRect();
+      c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      c.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+    c.addEventListener('mouseleave',()=>{
+      c.style.setProperty('--mx','-200px');
+      c.style.setProperty('--my','-200px');
+    });
+  });
 </script>
 </body>
 </html>
