@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Peter Yang",
+    "role": "Product at Roblox",
+    "summary": "Asked builders to compare the best interface/process for switching between Claude and Codex, highlighting workflow ergonomics as a key bottleneck in multi-agent coding.",
+    "url": "https://x.com/petergyang/status/2035564345430872095"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Nan Yu",
+    "role": "Head of Product at Linear",
+    "summary": "Pointed out that startup survival rates have held up surprisingly well despite a larger number of funded startups, signaling stronger-than-expected ecosystem resilience.",
+    "url": "https://x.com/thenanyu/status/2035534048940958015"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Thariq",
+    "role": "Claude Code at Anthropic",
+    "summary": "Emphasized specs as a leverage point and promoted Agent SDK as the easiest way to build agents, reinforcing a specs-plus-SDK default workflow.",
+    "url": "https://x.com/trq212/status/2035372729726087456"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Ryo Lu",
+    "role": "Design at Cursor",
+    "summary": "Shared a timing signal that the space is still early but clearer now, suggesting AI-native software UX is moving from experimentation toward repeatable patterns.",
+    "url": "https://x.com/ryolu_/status/2035355825477447907"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Garry Tan",
+    "role": "President & CEO at Y Combinator",
+    "summary": "Open-sourced his gstack CLI toolset, signaling that founder-grade internal operator stacks are increasingly being externalized as reusable infrastructure.",
+    "url": "https://x.com/garrytan/status/2035539745284177982"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Matt Turck",
+    "role": "VC at FirstMark Capital",
+    "summary": "Questioned whether AI-era products can build social-platform-level network effects, focusing on long-term defensibility via flywheels and data loops.",
+    "url": "https://x.com/mattturck/status/2035458987940880466"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Zara Zhang",
+    "role": "Builder and AI educator",
+    "summary": "Noted that AI power users are often busier and more stressed, because productivity gains expand possible work faster than human prioritization capacity.",
+    "url": "https://x.com/zarazhangrui/status/2035251996564103267"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "x",
+    "name": "Dan Shipper",
+    "role": "CEO at Every",
+    "summary": "Shared a bullish position on Figma as a thesis that incumbent SaaS platforms can adapt to AI and create value instead of being displaced.",
+    "url": "https://x.com/danshipper/status/2035365060118253848"
+  },
+  {
+    "date": "2026-03-23",
+    "source": "podcast",
+    "name": "No Priors",
+    "role": "Podcast with Andrej Karpathy",
+    "summary": "Karpathy argues the frontier has shifted to orchestrating parallel agents and removing humans from verifiable optimization loops, with digital workflows compounding faster than physical-world robotics.",
+    "url": "https://youtube.com/watch?v=kwSVtQ7dziU"
+  }
+]
