@@ -1,74 +1,82 @@
 [
   {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
+    "source": "x",
+    "name": "Swyx",
+    "role": "Builder/investor (DX, Cognition, Temporal, AI Engineer)",
+    "summary": "Enterprise agent adoption depends on compliance and governance readiness, not just coding speed. He also highlighted fast-rising demand for coding agents beyond engineering roles and referenced strong Devin growth momentum.",
+    "url": "https://x.com/swyx/status/2035945261265199141"
+  },
+  {
+    "date": "2026-03-24",
     "source": "x",
     "name": "Peter Yang",
-    "role": "Product at Roblox",
-    "summary": "Asked builders to compare the best interface/process for switching between Claude and Codex, highlighting workflow ergonomics as a key bottleneck in multi-agent coding.",
-    "url": "https://x.com/petergyang/status/2035564345430872095"
+    "role": "Product at Roblox; AI educator",
+    "summary": "Compared OpenClaw vs Claude Code in day-to-day use (especially remote control and permissions) and solicited practitioner feedback on role split. He also previewed interviews with builders behind Claude Cowork and Codex.",
+    "url": "https://x.com/petergyang/status/2035883215840542861"
   },
   {
-    "date": "2026-03-23",
-    "source": "x",
-    "name": "Nan Yu",
-    "role": "Head of Product at Linear",
-    "summary": "Pointed out that startup survival rates have held up surprisingly well despite a larger number of funded startups, signaling stronger-than-expected ecosystem resilience.",
-    "url": "https://x.com/thenanyu/status/2035534048940958015"
-  },
-  {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
     "source": "x",
     "name": "Thariq",
     "role": "Claude Code at Anthropic",
-    "summary": "Emphasized specs as a leverage point and promoted Agent SDK as the easiest way to build agents, reinforcing a specs-plus-SDK default workflow.",
-    "url": "https://x.com/trq212/status/2035372729726087456"
+    "summary": "Shared a new Claude Code /init experiment that interviews users and bootstraps repo setup (Claude.md, hooks, skills) based on customer feedback, reducing friction for agent-ready repo standardization.",
+    "url": "https://x.com/trq212/status/2035799806640115806"
   },
   {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
     "source": "x",
-    "name": "Ryo Lu",
-    "role": "Design at Cursor",
-    "summary": "Shared a timing signal that the space is still early but clearer now, suggesting AI-native software UX is moving from experimentation toward repeatable patterns.",
-    "url": "https://x.com/ryolu_/status/2035355825477447907"
+    "name": "Guillermo Rauch",
+    "role": "CEO at Vercel",
+    "summary": "Argued that code is increasingly an output rather than the primary input, and demonstrated the thesis with a v0-generated browser 3D Jenga project covering procedural assets and interaction details.",
+    "url": "https://x.com/rauchg/status/2035829366165471702"
   },
   {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
+    "source": "x",
+    "name": "Aaron Levie",
+    "role": "CEO at Box",
+    "summary": "Said enterprises are still very early in agent deployment: most have not scaled coding agents yet, let alone broader knowledge-work agents, indicating a sizable execution gap.",
+    "url": "https://x.com/levie/status/2035762343502836020"
+  },
+  {
+    "date": "2026-03-24",
     "source": "x",
     "name": "Garry Tan",
     "role": "President & CEO at Y Combinator",
-    "summary": "Open-sourced his gstack CLI toolset, signaling that founder-grade internal operator stacks are increasingly being externalized as reusable infrastructure.",
-    "url": "https://x.com/garrytan/status/2035539745284177982"
+    "summary": "Open-sourced GStack and framed Codex-like assistants as support across office hours and review workflows. Also previewed Claude Code in Chrome Sidebar via GStack integration.",
+    "url": "https://x.com/garrytan/status/2035941741824729186"
   },
   {
-    "date": "2026-03-23",
-    "source": "x",
-    "name": "Matt Turck",
-    "role": "VC at FirstMark Capital",
-    "summary": "Questioned whether AI-era products can build social-platform-level network effects, focusing on long-term defensibility via flywheels and data loops.",
-    "url": "https://x.com/mattturck/status/2035458987940880466"
-  },
-  {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
     "source": "x",
     "name": "Zara Zhang",
-    "role": "Builder and AI educator",
-    "summary": "Noted that AI power users are often busier and more stressed, because productivity gains expand possible work faster than human prioritization capacity.",
-    "url": "https://x.com/zarazhangrui/status/2035251996564103267"
+    "role": "Builder in OpenClaw ecosystem",
+    "summary": "Introduced the 'codebase to course' skill that converts codebases into interactive learning flows with visualization and plain-English explanations, signaling agent use for onboarding and knowledge transfer.",
+    "url": "https://x.com/zarazhangrui/status/2035962536474837019"
   },
   {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
+    "source": "x",
+    "name": "Peter Steinberger",
+    "role": "OpenClaw contributor",
+    "summary": "Reported major harness testing speed improvements from about 10 minutes to around 2 minutes, indicating rapid tooling reliability and performance hardening.",
+    "url": "https://x.com/steipete/status/2035945773729493466"
+  },
+  {
+    "date": "2026-03-24",
     "source": "x",
     "name": "Dan Shipper",
     "role": "CEO at Every",
-    "summary": "Shared a bullish position on Figma as a thesis that incumbent SaaS platforms can adapt to AI and create value instead of being displaced.",
-    "url": "https://x.com/danshipper/status/2035365060118253848"
+    "summary": "Proposed a two-person AI-native engineering pod model ('pirate + architect') to balance fast shipping through vibe coding with architectural integrity and long-term maintainability.",
+    "url": "https://x.com/danshipper/status/2035842017553465814"
   },
   {
-    "date": "2026-03-23",
-    "source": "podcast",
-    "name": "No Priors",
-    "role": "Podcast with Andrej Karpathy",
-    "summary": "Karpathy argues the frontier has shifted to orchestrating parallel agents and removing humans from verifiable optimization loops, with digital workflows compounding faster than physical-world robotics.",
-    "url": "https://youtube.com/watch?v=kwSVtQ7dziU"
+    "date": "2026-03-24",
+    "source": "x",
+    "name": "Aditya Agarwal",
+    "role": "General Partner at South Park Commons; ex-CTO at Dropbox",
+    "summary": "Reflected on founder-capital psychology: some teams use funding as security, while others view capital as optional once conviction and execution are strong.",
+    "url": "https://x.com/adityaag/status/2035808616964653316"
   }
 ]
