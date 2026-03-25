@@ -1,82 +1,74 @@
 [
   {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Swyx",
-    "role": "Builder/investor (DX, Cognition, Temporal, AI Engineer)",
-    "summary": "Enterprise agent adoption depends on compliance and governance readiness, not just coding speed. He also highlighted fast-rising demand for coding agents beyond engineering roles and referenced strong Devin growth momentum.",
-    "url": "https://x.com/swyx/status/2035945261265199141"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Peter Yang",
-    "role": "Product at Roblox; AI educator",
-    "summary": "Compared OpenClaw vs Claude Code in day-to-day use (especially remote control and permissions) and solicited practitioner feedback on role split. He also previewed interviews with builders behind Claude Cowork and Codex.",
-    "url": "https://x.com/petergyang/status/2035883215840542861"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Thariq",
-    "role": "Claude Code at Anthropic",
-    "summary": "Shared a new Claude Code /init experiment that interviews users and bootstraps repo setup (Claude.md, hooks, skills) based on customer feedback, reducing friction for agent-ready repo standardization.",
-    "url": "https://x.com/trq212/status/2035799806640115806"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Guillermo Rauch",
-    "role": "CEO at Vercel",
-    "summary": "Argued that code is increasingly an output rather than the primary input, and demonstrated the thesis with a v0-generated browser 3D Jenga project covering procedural assets and interaction details.",
-    "url": "https://x.com/rauchg/status/2035829366165471702"
-  },
-  {
-    "date": "2026-03-24",
+    "date": "2026-03-25",
     "source": "x",
     "name": "Aaron Levie",
-    "role": "CEO at Box",
-    "summary": "Said enterprises are still very early in agent deployment: most have not scaled coding agents yet, let alone broader knowledge-work agents, indicating a sizable execution gap.",
-    "url": "https://x.com/levie/status/2035762343502836020"
+    "role": "CEO, Box",
+    "summary": "Argues that computer-use and on-the-fly code execution are foundational primitives for enterprise agents, with key challenges shifting to identity, permissions, and security controls.",
+    "url": "https://x.com/levie/status/2036290915950797314"
   },
   {
-    "date": "2026-03-24",
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Amjad Masad",
+    "role": "CEO, Replit",
+    "summary": "Highlighted a viral TSA wait-time app built on Replit as evidence that fast, practical consumer utilities are a proving ground for AI-native development platforms.",
+    "url": "https://x.com/amasad/status/2036272008158433564"
+  },
+  {
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Kevin Weil",
+    "role": "VP Science, OpenAI",
+    "summary": "Announced ChatGPT 26 for standout students and recent grads using frontier AI in science, including HQ access and $10K grants to accelerate early research momentum.",
+    "url": "https://x.com/kevinweil/status/2036095876628693168"
+  },
+  {
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Alex Albert",
+    "role": "Researcher, Anthropic",
+    "summary": "Shared a physicist report that Opus 4.5 operated around second-year grad level and enabled ~10x research acceleration, while signaling mobile-first AI workflows are becoming practical.",
+    "url": "https://x.com/alexalbert__/status/2036232980059062550"
+  },
+  {
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Thariq",
+    "role": "Claude Code, Anthropic",
+    "summary": "Said Anthropic acquired a computer-use company and shipped computer-use in about four weeks, highlighting compressed M&A-to-product integration cycles.",
+    "url": "https://x.com/trq212/status/2036302910498173034"
+  },
+  {
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Nan Yu",
+    "role": "Head of Product, Linear",
+    "summary": "Shared that Codex caught an oblique feature-flag reference likely missed by many human reviewers, underscoring AI’s value in high-sensitivity code review.",
+    "url": "https://x.com/thenanyu/status/2036095568733143258"
+  },
+  {
+    "date": "2026-03-25",
+    "source": "x",
+    "name": "Matt Turck",
+    "role": "VC, FirstMark",
+    "summary": "Noted that tools like Claude Code may make the historical requirement of finding a technical cofounder before building increasingly obsolete.",
+    "url": "https://x.com/mattturck/status/2036182407779365309"
+  },
+  {
+    "date": "2026-03-25",
     "source": "x",
     "name": "Garry Tan",
-    "role": "President & CEO at Y Combinator",
-    "summary": "Open-sourced GStack and framed Codex-like assistants as support across office hours and review workflows. Also previewed Claude Code in Chrome Sidebar via GStack integration.",
-    "url": "https://x.com/garrytan/status/2035941741824729186"
+    "role": "President & CEO, Y Combinator",
+    "summary": "Reported shipping a 2,400-line PR into YC’s 1.84M-line legacy codebase with AI coding workflows, arguing these methods transfer to large, debt-heavy production systems.",
+    "url": "https://x.com/garrytan/status/2036330296308802012"
   },
   {
-    "date": "2026-03-24",
+    "date": "2026-03-25",
     "source": "x",
-    "name": "Zara Zhang",
-    "role": "Builder in OpenClaw ecosystem",
-    "summary": "Introduced the 'codebase to course' skill that converts codebases into interactive learning flows with visualization and plain-English explanations, signaling agent use for onboarding and knowledge transfer.",
-    "url": "https://x.com/zarazhangrui/status/2035962536474837019"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Peter Steinberger",
-    "role": "OpenClaw contributor",
-    "summary": "Reported major harness testing speed improvements from about 10 minutes to around 2 minutes, indicating rapid tooling reliability and performance hardening.",
-    "url": "https://x.com/steipete/status/2035945773729493466"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Dan Shipper",
-    "role": "CEO at Every",
-    "summary": "Proposed a two-person AI-native engineering pod model ('pirate + architect') to balance fast shipping through vibe coding with architectural integrity and long-term maintainability.",
-    "url": "https://x.com/danshipper/status/2035842017553465814"
-  },
-  {
-    "date": "2026-03-24",
-    "source": "x",
-    "name": "Aditya Agarwal",
-    "role": "General Partner at South Park Commons; ex-CTO at Dropbox",
-    "summary": "Reflected on founder-capital psychology: some teams use funding as security, while others view capital as optional once conviction and execution are strong.",
-    "url": "https://x.com/adityaag/status/2035808616964653316"
+    "name": "Sam Altman",
+    "role": "CEO, OpenAI",
+    "summary": "Stepped off Helion’s board as OpenAI and Helion explore larger collaboration, signaling governance tightening as AI-energy partnerships become more strategic.",
+    "url": "https://x.com/sama/status/2036137695605563682"
   }
 ]
