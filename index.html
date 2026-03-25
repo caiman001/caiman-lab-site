@@ -179,8 +179,8 @@
   (function(){
     const ctx=document.getElementById("investChart");
     if(!ctx||typeof Chart==="undefined")return;
-    const labels=["3/1","3/2","3/3","3/4","3/5","3/6","3/7","3/8","3/9","3/10","3/11","3/12","3/13","3/14"];
-    const scores=[3.5,3.8,3.2,4.0,4.5,4.2,3.9,4.6,4.8,4.3,4.1,4.5,4.7,4.2];
+    const labels=["3/11","3/18","3/19","3/20","3/23","3/25"];
+    const scores=[2.8,1.0,4.0,2.0,3.0,1.0];
     const g=ctx.getContext("2d").createLinearGradient(0,0,0,200);
     g.addColorStop(0,"rgba(6,182,212,0.22)");g.addColorStop(1,"rgba(6,182,212,0)");
     const pc=scores.map((_,i)=>i===scores.length-1?"#06b6d4":"rgba(6,182,212,0.5)");
@@ -312,12 +312,12 @@
       <div class="explore-sub" id="invest">
         <div class="explore-sub-hd"><div class="eyebrow">Invest</div><h3>股票理财🤑</h3></div>
         <div class="invest-grid">
-          <div class="invest-stat"><div class="invest-stat-label">当前准确率</div><div class="invest-stat-value cyan">3.0</div><div class="invest-stat-sub">满分 5.0 · ★★★☆☆</div></div>
-          <div class="invest-stat"><div class="invest-stat-label">本周趋势</div><div class="invest-stat-value green">↑ +0.4</div><div class="invest-stat-sub">较上周提升</div></div>
-          <div class="invest-stat"><div class="invest-stat-label">记录天数</div><div class="invest-stat-value" style="color:var(--fg)">14</div><div class="invest-stat-sub">天 · 最高 5.0 ★</div></div>
+          <div class="invest-stat"><div class="invest-stat-label">当前准确率</div><div class="invest-stat-value cyan">1.0</div><div class="invest-stat-sub">满分 5.0 · ★☆☆☆☆</div></div>
+          <div class="invest-stat"><div class="invest-stat-label">本周趋势</div><div class="invest-stat-value" style="color:#ef4444">↓ -2.0</div><div class="invest-stat-sub">较上周下降</div></div>
+          <div class="invest-stat"><div class="invest-stat-label">记录天数</div><div class="invest-stat-value" style="color:var(--fg)">6</div><div class="invest-stat-sub">天 · 最高 5.0 ★</div></div>
         </div>
         <div class="invest-chart-wrap" style="margin-top:12px">
-          <div class="invest-chart-header"><span class="invest-chart-title">准确率趋势</span><span class="invest-chart-period">最近 14 天</span></div>
+          <div class="invest-chart-header"><span class="invest-chart-title">准确率趋势</span><span class="invest-chart-period">最近 6 天</span></div>
           <div class="invest-chart-canvas"><canvas id="investChart"></canvas></div>
         </div>
       </div>
@@ -378,8 +378,8 @@
   (function(){
     const ctx=document.getElementById("investChart");
     if(!ctx||typeof Chart==="undefined")return;
-    const labels=["3/1","3/2","3/3","3/4","3/5","3/6","3/7","3/8","3/9","3/10","3/11","3/12","3/13","3/14"];
-    const scores=[3.5,3.8,3.2,4.0,4.5,4.2,3.9,4.6,4.8,4.3,4.1,4.5,4.7,4.2];
+    const labels=["3/11","3/18","3/19","3/20","3/23","3/25"];
+    const scores=[2.8,1.0,4.0,2.0,3.0,1.0];
     const g=ctx.getContext("2d").createLinearGradient(0,0,0,200);
     g.addColorStop(0,"rgba(6,182,212,0.22)");g.addColorStop(1,"rgba(6,182,212,0)");
     const pc=scores.map((_,i)=>i===scores.length-1?"#06b6d4":"rgba(6,182,212,0.5)");
