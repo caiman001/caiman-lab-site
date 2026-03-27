@@ -1,106 +1,82 @@
 [
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Andrej Karpathy",
-    "role": "Former Tesla AI Director; OpenAI founding team",
-    "summary": "Warned that the LiteLLM PyPI supply-chain compromise showed how one poisoned dependency can exfiltrate broad credentials, and argued teams should reduce dependency sprawl where possible.",
-    "url": "https://x.com/karpathy/status/2036487306585268612"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Thariq",
+    "role": "Claude Code @ Anthropic",
+    "summary": "Announced Claude Code Channels (research preview) with Telegram and Discord MCP integrations, signaling chat-native remote control of coding sessions.",
+    "url": "https://x.com/trq212/status/2034761016320696565"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Guillermo Rauch",
-    "role": "CEO @ Vercel",
-    "summary": "Said internally generated apps/agent interfaces are replacing many SaaS workflows, and announced elastic build machines to optimize CPU-heavy Rust build performance for speed/cost.",
-    "url": "https://x.com/rauchg/status/2036447879985037495"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Josh Woodward",
+    "role": "VP, Google / Gemini",
+    "summary": "Shared a Gemini Android voice UX fix so pauses no longer cut users off, improving practical multimodal assistant usability.",
+    "url": "https://x.com/joshwoodward/status/2034797067344998862"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Guillermo Rauch",
-    "role": "CEO @ Vercel",
-    "summary": "Announced intelligent hardware selection for builds, arguing modern compilers scale with CPU count so infra should adapt dynamically for agent-era workloads.",
-    "url": "https://x.com/rauchg/status/2036584870995173678"
-  },
-  {
-    "date": "2026-03-26",
-    "source": "x",
+    "date": "2026-03-27",
+    "source": "X",
     "name": "Aaron Levie",
-    "role": "CEO @ Box",
-    "summary": "Argued that software must be consumable headlessly via APIs for agents; otherwise platforms risk irrelevance as agent usage outscales direct human usage.",
-    "url": "https://x.com/levie/status/2036478998667207012"
+    "role": "CEO, Box",
+    "summary": "Argued that workers who can effectively wield AI will create widening productivity and value gaps versus peers.",
+    "url": "https://x.com/levie/status/2034833274506281061"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Claude",
-    "role": "AI assistant by Anthropic",
-    "summary": "Introduced Claude Code auto mode with per-tool-call risk checks to automate safe actions while blocking/rerouting risky operations.",
-    "url": "https://x.com/claudeai/status/2036503582166393240"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Amjad Masad",
+    "role": "CEO, Replit",
+    "summary": "Highlighted a tighter design-to-production loop where teams can explore many designs and then directly build into production workflows.",
+    "url": "https://x.com/amasad/status/2034702399718539355"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Sam Altman",
-    "role": "CEO @ OpenAI",
-    "summary": "Announced OpenAI Foundation and at least $1B over the next year focused on AI resilience, including scientific upside and societal risk response.",
-    "url": "https://x.com/sama/status/2036488680769241223"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Ryo Lu",
+    "role": "Design, Cursor",
+    "summary": "Positioned Composer 2 around frontier-level intelligence with lower cost and speed advantages in AI coding workflows.",
+    "url": "https://x.com/ryolu_/status/2034690837444272266"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Peter Yang",
-    "role": "Product @ Roblox",
-    "summary": "Advocated for AI agents reducing process overhead so product teams can focus on end-user iteration loops instead of heavy documentation workflows.",
-    "url": "https://x.com/petergyang/status/2036621615086309468"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Dan Shipper",
+    "role": "CEO, Every",
+    "summary": "Published model-vs-model workflow comparisons and practical guidance on AI-assisted writing quality and process optimization.",
+    "url": "https://x.com/danshipper/status/2034746435401314659"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Nan Yu",
-    "role": "Head of Product @ Linear",
-    "summary": "Said personal output and quality bar increased while manually writing PRDs/issues/code dropped, reinforcing agent-augmented product execution.",
-    "url": "https://x.com/thenanyu/status/2036549647267709110"
-  },
-  {
-    "date": "2026-03-26",
-    "source": "x",
+    "date": "2026-03-27",
+    "source": "X",
     "name": "Garry Tan",
-    "role": "President & CEO @ Y Combinator",
-    "summary": "Framed AI as leverage expansion rather than developer replacement, comparing it to transportation that expands reachable outcomes.",
-    "url": "https://x.com/garrytan/status/2036674371855823153"
+    "role": "President & CEO, Y Combinator",
+    "summary": "Argued Markdown + LLM is a high-leverage interface for context-heavy, intelligence-required work and complex task execution.",
+    "url": "https://x.com/garrytan/status/2034881003140129145"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Nikunj Kothari",
-    "role": "Partner @ FPV Ventures",
-    "summary": "Launched DeployGraph by scraping 417 subprocessor lists to map which infra stacks AI-native companies are actually using.",
-    "url": "https://x.com/nikunj/status/2036572222081606065"
+    "date": "2026-03-27",
+    "source": "X",
+    "name": "Peter Yang",
+    "role": "Product, Roblox",
+    "summary": "Framed OpenAI strategy as distribution-first via ChatGPT install base, then deeper coding utility to increase developer lock-in.",
+    "url": "https://x.com/petergyang/status/2034786020160635031"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
+    "date": "2026-03-27",
+    "source": "X",
     "name": "Zara Zhang",
     "role": "Builder",
-    "summary": "Positioned code as self-expression and highlighted rapid creator momentum through AI-assisted shipping and distribution workflows.",
-    "url": "https://x.com/zarazhangrui/status/2036590721927618988"
+    "summary": "Introduced MySay, a voice-first AI flow that interviews users and converts spoken thoughts into personalized social posts.",
+    "url": "https://x.com/zarazhangrui/status/2034699643104501958"
   },
   {
-    "date": "2026-03-26",
-    "source": "x",
-    "name": "Aditya Agarwal",
-    "role": "General Partner @ South Park Commons; ex-CTO @ Dropbox",
-    "summary": "Argued robotics hardware is increasingly ready, shifting the bottleneck to reliable, scalable software systems.",
-    "url": "https://x.com/adityaag/status/2036426693930291334"
-  },
-  {
-    "date": "2026-03-26",
-    "source": "podcast",
-    "name": "Heather Kulik",
-    "role": "Professor of Chemical Engineering @ MIT",
-    "summary": "Explained that AI can accelerate materials discovery via active learning and multi-objective optimization, but robust progress depends on higher-fidelity data and stronger validation against real experiments.",
-    "url": "https://youtube.com/watch?v=KSCCKCz2x04"
+    "date": "2026-03-27",
+    "source": "YouTube",
+    "name": "Benedict Evans",
+    "role": "Guest on Data Driven NYC podcast",
+    "summary": "Discussed OpenAI moat challenges and argued software value is shifting toward distribution, workflow ownership, and AI-enabled improvised software.",
+    "url": "https://youtube.com/watch?v=jH2ZIUKvazU"
   }
 ]
