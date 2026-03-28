@@ -1,82 +1,98 @@
 [
   {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Thariq",
-    "role": "Claude Code @ Anthropic",
-    "summary": "Announced Claude Code Channels (research preview) with Telegram and Discord MCP integrations, signaling chat-native remote control of coding sessions.",
-    "url": "https://x.com/trq212/status/2034761016320696565"
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Andrej Karpathy",
+    "role": "former Tesla AI Director; OpenAI founding team",
+    "summary": "Argues the hard part of agent-built products is now the surrounding DevOps stack - payments, auth, databases, security, domains, and deployment. The milestone to watch is an agent rebuilding and shipping a full product end to end, not just generating code.",
+    "url": "https://x.com/karpathy/status/2037200624450936940"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Swyx",
+    "role": "builder, podcaster, and developer advocate across DX/agent tooling",
+    "summary": "Says coding agents create a golden age for people who have documented their workflows, because years of setup notes can now be converted into executable scripts and reusable skills. He published his 2026 Mac setup as a Claude-consumable skill.",
+    "url": "https://x.com/swyx/status/2037410502817841176"
+  },
+  {
+    "date": "2026-03-28",
+    "source": "x",
     "name": "Josh Woodward",
-    "role": "VP, Google / Gemini",
-    "summary": "Shared a Gemini Android voice UX fix so pauses no longer cut users off, improving practical multimodal assistant usability.",
-    "url": "https://x.com/joshwoodward/status/2034797067344998862"
+    "role": "VP at Google, Google Labs, Gemini, and Google AI Studio",
+    "summary": "Highlighted Gemini features aimed at retention and usability: importing chats and memory from other chatbots, plus a major Gemini Live upgrade with faster responses, better EQ, broader language range, and longer context.",
+    "url": "https://x.com/joshwoodward/status/2037332341270733259"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Aaron Levie",
-    "role": "CEO, Box",
-    "summary": "Argued that workers who can effectively wield AI will create widening productivity and value gaps versus peers.",
-    "url": "https://x.com/levie/status/2034833274506281061"
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Kevin Weil",
+    "role": "VP Science at OpenAI",
+    "summary": "Used a case involving ChatGPT and AlphaFold helping create a personalized mRNA vaccine protocol for a dog to illustrate how AI is compressing advanced biomedical reasoning into workflows individuals can use.",
+    "url": "https://x.com/kevinweil/status/2037420429430919674"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Amanda Askell",
+    "role": "philosopher and ethicist at Anthropic",
+    "summary": "Argued remote work may have worsened conditions for people who prefer offices, because companies now treat home as the fallback instead of fixing poor workspaces. She also noted that private offices may be a more powerful recruiting lever than many flashy perks.",
+    "url": "https://x.com/AmandaAskell/status/2037208098121933188"
+  },
+  {
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Thariq",
+    "role": "Claude Code engineer at Anthropic",
+    "summary": "Announced peak-hour session limit changes where weekly limits stay the same but usage burns faster during weekday high-demand windows, signaling Anthropic is using scheduling and efficiency improvements to manage growth.",
+    "url": "https://x.com/trq212/status/2037254607001559305"
+  },
+  {
+    "date": "2026-03-28",
+    "source": "x",
     "name": "Amjad Masad",
-    "role": "CEO, Replit",
-    "summary": "Highlighted a tighter design-to-production loop where teams can explore many designs and then directly build into production workflows.",
-    "url": "https://x.com/amasad/status/2034702399718539355"
+    "role": "CEO of Replit",
+    "summary": "Framed vibecoding as a new unlock for entrepreneurship and argued platforms should not gatekeep the category, pointing to a coming policy and ecosystem battle over who gets to build with conversational software creation tools.",
+    "url": "https://x.com/amasad/status/2037275196240052724"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Ryo Lu",
-    "role": "Design, Cursor",
-    "summary": "Positioned Composer 2 around frontier-level intelligence with lower cost and speed advantages in AI coding workflows.",
-    "url": "https://x.com/ryolu_/status/2034690837444272266"
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Guillermo Rauch",
+    "role": "CEO of Vercel",
+    "summary": "Argued that useful agents need real computers - tool access, install rights, write/run/debug loops, deployment paths, and persistence. His Vercel Sandbox pitch is that ephemeral tool-calling alone is not enough for serious agent work.",
+    "url": "https://x.com/rauchg/status/2037303296034316379"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Dan Shipper",
-    "role": "CEO, Every",
-    "summary": "Published model-vs-model workflow comparisons and practical guidance on AI-assisted writing quality and process optimization.",
-    "url": "https://x.com/danshipper/status/2034746435401314659"
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Aaron Levie",
+    "role": "CEO of Box",
+    "summary": "Said coding agents are becoming the backbone of enterprise knowledge-work automation and that Box wants to plug enterprise content directly into that loop via its Codex plugin. He also stressed that change management, legacy systems, weak APIs, and missing context remain the real barriers to enterprise AI adoption.",
+    "url": "https://x.com/levie/status/2037383187245273477"
   },
   {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Garry Tan",
-    "role": "President & CEO, Y Combinator",
-    "summary": "Argued Markdown + LLM is a high-leverage interface for context-heavy, intelligence-required work and complex task execution.",
-    "url": "https://x.com/garrytan/status/2034881003140129145"
-  },
-  {
-    "date": "2026-03-27",
-    "source": "X",
-    "name": "Peter Yang",
-    "role": "Product, Roblox",
-    "summary": "Framed OpenAI strategy as distribution-first via ChatGPT install base, then deeper coding utility to increase developer lock-in.",
-    "url": "https://x.com/petergyang/status/2034786020160635031"
-  },
-  {
-    "date": "2026-03-27",
-    "source": "X",
+    "date": "2026-03-28",
+    "source": "x",
     "name": "Zara Zhang",
-    "role": "Builder",
-    "summary": "Introduced MySay, a voice-first AI flow that interviews users and converts spoken thoughts into personalized social posts.",
-    "url": "https://x.com/zarazhangrui/status/2034699643104501958"
+    "role": "builder and product creator",
+    "summary": "Shared that product ideas emerge less from isolated thinking and more from playful experimentation with models plus frequent conversations with users, founders, and developers.",
+    "url": "https://x.com/zarazhangrui/status/2037254276389757313"
   },
   {
-    "date": "2026-03-27",
-    "source": "YouTube",
-    "name": "Benedict Evans",
-    "role": "Guest on Data Driven NYC podcast",
-    "summary": "Discussed OpenAI moat challenges and argued software value is shifting toward distribution, workflow ownership, and AI-enabled improvised software.",
-    "url": "https://youtube.com/watch?v=jH2ZIUKvazU"
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Nikunj Kothari",
+    "role": "partner at FPV Ventures",
+    "summary": "Showed a concrete agent workflow using Claude Code, Google Calendar MCP, and the Ramp CLI to finish three months of expense categorization in about 12 minutes, highlighting how agents are already useful in operational finance tasks.",
+    "url": "https://x.com/nikunj/status/2037305617589948818"
+  },
+  {
+    "date": "2026-03-28",
+    "source": "x",
+    "name": "Aditya Agarwal",
+    "role": "General Partner at South Park Commons",
+    "summary": "Amplified Elad Gil's contrarian startup arguments that more markets are open than founders think, product surface area can beat data as a moat, and a lot of startup conventional wisdom is wrong in the current AI cycle.",
+    "url": "https://x.com/adityaag/status/2037200252541804693"
   }
 ]
